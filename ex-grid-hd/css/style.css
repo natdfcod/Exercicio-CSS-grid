@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Laranja: #EF6209;
+    --Cinza-escuro: #121212;
+    --Branca: #FFFFFF;
+    --color-light-700: #ffffff;
+    --color-light-500: #f9f9f9;
+    --color-light-300: #cccccc;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+ul, ol {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+h1, h3, h4 {
+    font-family: Oswald, sans-serif;
+}
+p {
+font-family: Quicksand, sans-serif;
+font-weight: 300;
+}
+i{
+    transition: .5s;
+    
+}
+.brands i:hover{
+    color: var(--Laranja);
+    scale: 1.1;
+}
+.user i:hover{
+    color: var(--Branca);
+    scale: 1.02;
+}
+header{
+    background-color: var(--Cinza-escuro);
+    padding: 1.5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-brands{
+    color: var(--Branca);
+}
+.fa-solid{
+    color: var(--Laranja);
+}
+
+section{
+    max-width: 70%;
+    margin: 1rem auto;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    
+    img{
+        max-width: 5rem;
+    }
+}
+main{
+    color: var(--Branca);
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 18rem;
+}
+main .content:hover{
+    border: var(--Laranja) solid 3px;
+    scale: 1.01;
+    border-radius: 5px;
+}
+main .box4:hover{
+        border: var(--Cinza-escuro) solid 3px;
+    }
+.box1 {
+    
+    background-image: url(../images/josh-marshall-7waHOTcvcT4-unsplash.jpg);
+    background-position: 50%;
+    div{
+        background-color: var(--Laranja);
+        max-width: 25rem;
+        padding: 1.5rem;
+        
+        h3{
+            padding-bottom: 1rem;
+        }
+    }
+}
+.box2{
+    background-image: url(../images/harley-davidson-1HZcJjdtc9g-unsplash.jpg);
+}
+.box3{
+    background-color: var(--Cinza-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.box4{
+    background-color: var(--Laranja);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    
+    h4 {
+        text-align: right;
+    }
+}
+.box5{
+    background-image: url(../images/harley-davidson-BwXsi8tcXlk-unsplash.jpg);
+}
+.box6{
+    background-image: url(../images/8880cf0e6f4f2683f0b28c419443f1c2.jpg);
+}
+.box7{
+    background-image: url(../images/547f47d9872f15da5629b58727e73077.jpg);
+}
+.box8{
+    background-image: url(../images/219d754ba4a23d75376dbef0f77f2adf.jpg);
+}
+.box9{
+    background-image: url(../images/79b623aeba5ff5a3a352d3f16a692c13.jpg);
+}
+.box10{
+    background-image: url(../images/aarya-rashinkar-QWgJfq8-ve8-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    div{
+        background-color: var(--Laranja);
+        max-width: 25rem;
+        padding: 1.5rem; 
+    }
+}
+.content{
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.span-2-row{
+    grid-row: span 2;
+}
+.span-2-col{
+    grid-column: span 2;
+}
+.span-4-row{
+    grid-row: span 4;
+}
+footer{
+   text-align: center;
+    padding-block: 2rem;
+    background-color: var(--color-light-700);
+    border-top: 1px solid var(--color-light-300);
+}
