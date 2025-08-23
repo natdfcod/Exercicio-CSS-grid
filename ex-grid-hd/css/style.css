@@ -26,12 +26,11 @@ h1, h3, h4 {
     font-family: Oswald, sans-serif;
 }
 p {
-font-family: Quicksand, sans-serif;
-font-weight: 300;
+    font-family: Quicksand, sans-serif;
+    font-weight: 300;
 }
 i{
     transition: .5s;
-    
 }
 .brands i:hover{
     color: var(--Laranja);
@@ -43,7 +42,7 @@ i{
 }
 header{
     background-color: var(--Cinza-escuro);
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 2.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -69,6 +68,7 @@ section{
     }
 }
 main{
+    padding: 2rem;
     color: var(--Branca);
     display: grid;
     gap: .5rem;
@@ -86,10 +86,10 @@ main .box4:hover{
 .box1 {
     
     background-image: url(../images/josh-marshall-7waHOTcvcT4-unsplash.jpg);
-    background-position: 50%;
     div{
         background-color: var(--Laranja);
-        max-width: 25rem;
+        max-width: 37%;
+        min-width: 20rem;
         padding: 1.5rem;
         
         h3{
@@ -140,7 +140,8 @@ main .box4:hover{
     align-items: end;
     div{
         background-color: var(--Laranja);
-        max-width: 25rem;
+        max-width: 37%;
+        min-width: 20rem;
         padding: 1.5rem; 
     }
 }
@@ -163,4 +164,23 @@ footer{
     padding-block: 2rem;
     background-color: var(--color-light-700);
     border-top: 1px solid var(--color-light-300);
+}
+@media(width<=1024px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .span-2-col{
+    grid-column: span 1;
+    }
+    .box2{
+        background-position: 70% 30%;
+    }
+    .box5{
+        background-position: 30% 70%;
+    }
+}
+@media(width<=650px){
+    main{
+        grid-template-columns: 1fr;
+    }
 }
